@@ -24,6 +24,11 @@ class _MedicalHistoryPageState extends State<MedicalHistoryPage> {
   @override
   Widget build(BuildContext context) {
     String uid = prefs.getString('USERID') ?? "";
+    if (uid.isEmpty) {
+      print('Error: User ID not found using key \'USERID\'');
+      // Handle the case where user ID is not found
+      return const Text('Error: User ID not found');
+    }
     final size = MediaQuery.of(context).size;
     return MedScaffold(
       title: "Medical History",

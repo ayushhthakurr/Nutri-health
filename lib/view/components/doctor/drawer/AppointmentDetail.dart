@@ -36,12 +36,13 @@ class Patient {
 }
 
 class AppointmentDetailPage extends StatefulWidget {
-   static const String route = '/appointmentdetailpage';
+  static const String route = '/appointmentdetailpage';
   @override
   _AppointmentDetailPageState createState() => _AppointmentDetailPageState();
 }
 
 class _AppointmentDetailPageState extends State<AppointmentDetailPage> {
+  // ignore: unused_field
   static const route = '/appointmentdetail';
 
   Patient patient = Patient(
@@ -67,9 +68,8 @@ class _AppointmentDetailPageState extends State<AppointmentDetailPage> {
       appBar: AppBar(
         title: const Text(
           'Detail of Patients',
-          style: TextStyle(
-            fontSize: 20
-          ),),
+          style: TextStyle(fontSize: 20),
+        ),
         centerTitle: true,
         backgroundColor: const Color(0xffFF4667),
         elevation: 0.0,
@@ -165,22 +165,20 @@ class _AppointmentDetailPageState extends State<AppointmentDetailPage> {
                   margin: EdgeInsets.only(bottom: 16.0),
                   child: Text(
                     "Patient Name: ${patient.name}\n" +
-                    "Phone: ${patient.phone}\n" +
-                    "Email: ${patient.email}\n" +
-                    "Appointment Date: ${patient.appointmentDate}\n" +
-                    "Reason for Visit: ${patient.reasonForVisit}\n" +
-                    "Medical History: ${patient.medicalHistory}\n" +
-                    "Current Medications: ${patient.currentMedications.join(', ')}\n" +
-                    "Allergies: ${patient.allergies.join(', ')}\n" +
-                    "Insurance Info: ${patient.insuranceInfo}\n" +
-                    "Payment Method: ${patient.paymentMethod}\n" +
-                    "Special Requests: ${patient.specialRequests}\n" +
-                    "Doctor Notes: ${patient.doctorNotes}\n" +
-                    "Follow-up Appointments: ${patient.followUpAppointments.join(', ')}\n" +
-                    "Lab Results: ${patient.labResults.join(', ')}\n",
-                    style: TextStyle(
-                      fontSize: 16.0
-                    ),
+                        "Phone: ${patient.phone}\n" +
+                        "Email: ${patient.email}\n" +
+                        "Appointment Date: ${patient.appointmentDate}\n" +
+                        "Reason for Visit: ${patient.reasonForVisit}\n" +
+                        "Medical History: ${patient.medicalHistory}\n" +
+                        "Current Medications: ${patient.currentMedications.join(', ')}\n" +
+                        "Allergies: ${patient.allergies.join(', ')}\n" +
+                        "Insurance Info: ${patient.insuranceInfo}\n" +
+                        "Payment Method: ${patient.paymentMethod}\n" +
+                        "Special Requests: ${patient.specialRequests}\n" +
+                        "Doctor Notes: ${patient.doctorNotes}\n" +
+                        "Follow-up Appointments: ${patient.followUpAppointments.join(', ')}\n" +
+                        "Lab Results: ${patient.labResults.join(', ')}\n",
+                    style: TextStyle(fontSize: 16.0),
                   ),
                 ),
                 Container(

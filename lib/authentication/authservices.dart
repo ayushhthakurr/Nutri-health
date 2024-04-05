@@ -13,6 +13,7 @@ class AuthServices {
               email: email, password: password))
           .user!;
 
+      // ignore: unnecessary_null_comparison
       if (user != null) {
         await DatabaseServices(uid: user.uid).savingUserData(fullName, email);
         await HelperFunction.saveUserId(user.uid);
@@ -30,6 +31,7 @@ class AuthServices {
               email: email, password: password))
           .user!;
 
+      // ignore: unnecessary_null_comparison
       if (user != null) {
         await HelperFunction.saveUserId(user.uid);
         await HelperFunction.saveUserLoggedInStatus(true);
@@ -52,7 +54,8 @@ class AuthServices {
     }
   }
 
-  registerDoctorWithEmailandPassword(String fullName, String email, String password, String license, String specialization) {}
+  registerDoctorWithEmailandPassword(String fullName, String email,
+      String password, String license, String specialization) {}
 }
 
 class HelperFunction {

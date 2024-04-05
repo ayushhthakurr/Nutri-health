@@ -1,4 +1,4 @@
-import 'dart:developer'; 
+import 'dart:developer';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:medrecords/authentication/login_page.dart';
@@ -77,10 +77,10 @@ class _MyAppState extends State<MyApp> {
         MedicalVisitPage.route: ((context) => const MedicalVisitPage()),
         AllergiesPage.route: (context) => const AllergiesPage(),
         VaccinationPage.route: ((context) => const VaccinationPage()),
-       SavePatientRecordPage.route: (context) =>  SavePatientRecordPage(),
-       AppointmentDetailPage.route: ((context) => AppointmentDetailPage()),
-       DoctorAppointmentsPage.route: ((context) => DoctorAppointmentsPage()),
-       ViewPatientsPage.route: ((context) => ViewPatientsPage()),
+        SavePatientRecordPage.route: (context) => SavePatientRecordPage(),
+        AppointmentDetailPage.route: ((context) => AppointmentDetailPage()),
+        DoctorAppointmentsPage.route: ((context) => DoctorAppointmentsPage()),
+        ViewPatientsPage.route: ((context) => ViewPatientsPage()),
       },
     );
   }

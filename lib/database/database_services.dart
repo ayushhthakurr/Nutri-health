@@ -1,5 +1,3 @@
-// ignore_for_file: avoid_print
-
 import 'dart:developer';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:medrecords/authentication/authservices.dart';
@@ -9,9 +7,6 @@ class DatabaseServices {
   DatabaseServices({this.uid});
   final CollectionReference userCollection =
       FirebaseFirestore.instance.collection("users");
-  
-
-  
 
   Future savingUserData(String fullName, String email) async {
     return await userCollection.doc(uid).set({
@@ -106,60 +101,4 @@ class DatabaseServices {
       return false;
     }
   }
-  
-  //changes
-
-  
-//   Future<bool> addPatientData(
-//     String patientName,
-//     String personalInformation,
-//     String medicalHistory,
-//     String currentMedications,
-//     String allergies,
-//     String vitalSigns,
-//     String progressNotes,
-//     String diagnoses,
-//     String treatmentPlans) async {
-//   final userid = await HelperFunction.getUserId();
-//   try {
-//     userCollection.doc(userid).collection("patientData").add({
-//       "patientName": patientName,
-//       "personalInformation": personalInformation,
-//       "medicalHistory": medicalHistory,
-//       "currentMedications": currentMedications,
-//       "allergies": allergies,
-//       "vitalSigns": vitalSigns,
-//       "progressNotes": progressNotes,
-//       "diagnoses": diagnoses,
-//       "treatmentPlans": treatmentPlans,
-//       "patientId": patientName + personalInformation,
-//       "doctorId": userid,
-//     });
-//     log("Patient Data Added");
-//     return true;
-//   } catch (e) {
-//     print(e);
-//     return false;
-//   }
-// }
-
-// Future<List<DocumentSnapshot>?> getPatients() async {
-//   final userid = await HelperFunction.getUserId();
-//     try {
-//       final QuerySnapshot snapshot = await userCollection
-//       .doc(userid)
-//       .collection("patientData")
-//       .get();
-//       return snapshot.docs;
-//     } 
-//     catch (e) {
-//       print(e);
-//       return null;
-//     }
-//   }
 }
-
-
-
-
-
