@@ -86,14 +86,17 @@ class _SignupPageState extends State<SignupPage> {
                     Navigator.pop(context);
                   },
                   icon: const Icon(Icons.arrow_back),
-                  color: Colors.white,
+                  color: Color.fromARGB(250, 0, 0, 0),
                   iconSize: 25,
                 ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 00, horizontal: 00),
-              child: Image.asset('assets/images/heart.png',scale: 2.0,),
+              child: Image.asset(
+                'assets/images/heart.png',
+                scale: 2.0,
+              ),
             ),
             const SizedBox(
               height: 00,
@@ -117,9 +120,9 @@ class _SignupPageState extends State<SignupPage> {
               height: 10,
             ),
             Container(
-              decoration: BoxDecoration( 
-              color: const Color(0xffF4C2C2),
-              borderRadius: BorderRadius.circular(20)),
+              decoration: BoxDecoration(
+                  color: const Color(0xffF4C2C2),
+                  borderRadius: BorderRadius.circular(20)),
               child: Column(
                 children: [
                   SizedBox(
@@ -194,7 +197,8 @@ class _SignupPageState extends State<SignupPage> {
                     child: const Text(
                       "Log In",
                       style: TextStyle(
-                          fontWeight: FontWeight.bold, color: Color(0xffE41B27)),
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xffE41B27)),
                     ))
               ],
             )

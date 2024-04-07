@@ -1,6 +1,7 @@
 import 'dart:developer';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:medrecords/authentication/login_page.dart';
 import 'package:medrecords/authentication/navigation.dart';
 import 'package:medrecords/authentication/signup_page.dart';
@@ -62,7 +63,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'MedRecords',
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       home: _isSignedIn ? NavigationPage() : const WelcomePage(),
       //home:  NavigationPage(),

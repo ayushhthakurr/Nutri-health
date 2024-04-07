@@ -8,12 +8,13 @@ class MedScaffold extends StatelessWidget {
   final silverList;
   final fab;
   bool backButton;
-  MedScaffold(
-      {super.key,
-      required this.title,
-      required this.silverList,
-      this.fab,
-      this.backButton = true});
+  MedScaffold({
+    super.key,
+    required this.title,
+    required this.silverList,
+    this.fab,
+    this.backButton = true,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -21,18 +22,17 @@ class MedScaffold extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 253, 33, 106),
         title: Center(
-          child: Container(
-            child: Text(
-              title,
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontSize: 30),
-            )
-          )
-        ),
+            child: Container(
+                child: Text(
+          title,
+          style: TextStyle(
+              color: Colors.white, fontWeight: FontWeight.bold, fontSize: 30),
+        ))),
       ),
-      //drawer: Drawer(backgroundColor: Colors.pink,elevation: 10,),
+      drawer: Drawer(
+        backgroundColor: Colors.pink,
+        elevation: 10,
+      ),
       floatingActionButton: (fab != null)
           ? FloatingActionButton.extended(
               onPressed: fab,
@@ -43,8 +43,7 @@ class MedScaffold extends StatelessWidget {
               label: const Text("Add"),
             )
           : const SizedBox(),
-      body:
-      CustomScrollView(
+      body: CustomScrollView(
         slivers: <Widget>[
           SliverAppBar(
             elevation: 20,
@@ -54,7 +53,10 @@ class MedScaffold extends StatelessWidget {
                 : const SizedBox(),
             flexibleSpace: FlexibleSpaceBar(
               expandedTitleScale: 2,
-              title: Image.asset('assets/images/heart.png',height: 100,),
+              title: Image.asset(
+                'assets/images/heart.png',
+                height: 100,
+              ),
               centerTitle: true,
             ),
           ),

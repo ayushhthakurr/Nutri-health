@@ -39,7 +39,7 @@ class _LoginPageState extends State<LoginPage> {
 
         // ignore: use_build_context_synchronously
         Navigator.of(context).pushAndRemoveUntil(
-            MaterialPageRoute(builder: (context) =>  NavigationPage()),
+            MaterialPageRoute(builder: (context) => NavigationPage()),
             (route) => false);
       } else {
         Navigator.pop(context);
@@ -74,7 +74,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF6D4D4),
+      backgroundColor: const Color.fromRGBO(254, 199, 180, 1.000),
       body: SingleChildScrollView(
         physics: const AlwaysScrollableScrollPhysics(),
         child: SafeArea(
@@ -90,23 +90,25 @@ class _LoginPageState extends State<LoginPage> {
                     Navigator.pop(context);
                   },
                   icon: const Icon(Icons.arrow_back),
-                  color: Colors.white,
+                  color: Color.fromARGB(255, 0, 0, 0),
                   iconSize: 25,
                 ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 00, horizontal: 00),
-              child: Image.asset('assets/images/heart.png',scale: 2.0,),
+              child: Image.asset(
+                'assets/images/heart.png',
+                scale: 2.0,
+              ),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 40),
               child: Container(
                 alignment: Alignment.topLeft,
-                child: 
-                const Center(
+                child: const Center(
                   child: Text(
-                    "Log In to NutriHealth",
+                    "Login to Account",
                     style: TextStyle(
                         color: Color(0xffE41B27),
                         fontSize: 30,
@@ -119,11 +121,11 @@ class _LoginPageState extends State<LoginPage> {
               height: 20,
             ),
             Container(
-              height: 150,
+              height: 160,
               width: 330,
-              decoration: BoxDecoration( 
-              color: const Color(0xffF4C2C2),
-              borderRadius: BorderRadius.circular(20)), 
+              decoration: BoxDecoration(
+                  color: const Color(0xffF4C2C2),
+                  borderRadius: BorderRadius.circular(20)),
               child: Column(
                 children: [
                   SizedBox(
@@ -141,7 +143,6 @@ class _LoginPageState extends State<LoginPage> {
                             });
                           },
                           obscuretext: false)),
-            
                   SizedBox(
                       width: 300,
                       child: inputFeild(
@@ -167,7 +168,6 @@ class _LoginPageState extends State<LoginPage> {
                     onTap: () {
                       logIn();
                     })),
-            
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -185,7 +185,8 @@ class _LoginPageState extends State<LoginPage> {
                     child: const Text(
                       "Sign Up",
                       style: TextStyle(
-                          fontWeight: FontWeight.bold, color: Color(0xffE41B27)),
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xffE41B27)),
                     ))
               ],
             )
