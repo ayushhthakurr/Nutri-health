@@ -5,7 +5,6 @@ import 'package:medrecords/view/components/doctor/drawer/AppointmentDetail.dart'
 import 'package:medrecords/view/components/doctor/drawer/DoctorAppointment.dart';
 import 'package:medrecords/view/components/doctor/SavePatient.dart';
 
-
 class DoctorHomePage extends StatefulWidget {
   static const String route = '/doctorhome';
   @override
@@ -13,14 +12,13 @@ class DoctorHomePage extends StatefulWidget {
 }
 
 class _DoctorHomePageState extends State<DoctorHomePage> {
-     
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     appBar: AppBar(
+      appBar: AppBar(
         title: Text('Doctors Page'),
         centerTitle: true,
-        backgroundColor: Color(0xffFF4667),
+        backgroundColor: const Color.fromRGBO(247, 65, 143, 1.000),
         elevation: 0.0,
       ),
       drawer: Drawer(
@@ -59,7 +57,7 @@ class _DoctorHomePageState extends State<DoctorHomePage> {
               title: Text('Patient Records'),
               onTap: () {
                 // Navigate to patient records page
-                 Navigator.pushNamed(context, DoctorAppointmentsPage.route);
+                Navigator.pushNamed(context, DoctorAppointmentsPage.route);
               },
             ),
             ListTile(
@@ -88,7 +86,7 @@ class _DoctorHomePageState extends State<DoctorHomePage> {
         ),
       ),
       body: Container(
-         color: Color(0xffF4D4D4),
+        color: Color(0xffF4D4D4),
         padding: EdgeInsets.all(16.0),
         child: Center(
           child: Column(
@@ -112,7 +110,7 @@ class _DoctorHomePageState extends State<DoctorHomePage> {
                     color: Colors.red,
                     fontSize: 16,
                   ),
-                  ),
+                ),
               ),
               SizedBox(
                 height: 20.0,
@@ -128,7 +126,7 @@ class _DoctorHomePageState extends State<DoctorHomePage> {
                     color: Colors.red,
                     fontSize: 16,
                   ),
-                  ),
+                ),
               ),
             ],
           ),

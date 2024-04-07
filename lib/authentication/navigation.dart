@@ -13,11 +13,11 @@ class NavigationPage extends StatelessWidget {
           style: TextStyle(color: Colors.white),
         ),
         centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 135, 27, 67),
+        backgroundColor: Color.fromARGB(255, 252, 80, 106),
         elevation: 0.0,
       ),
       body: Container(
-        color: const Color(0xffF4D4D4),
+        color: const Color.fromRGBO(254, 199, 180, 1.000),
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
