@@ -43,7 +43,7 @@ class _LoginPageState extends State<LoginPage> {
             (route) => false);
       } else {
         Navigator.pop(context);
-        showSnackBar(context, Colors.red, value);
+        showSnackBar(context, Color.fromARGB(255, 252, 80, 106), value);
       }
     });
   }
@@ -124,7 +124,7 @@ class _LoginPageState extends State<LoginPage> {
               height: 160,
               width: 330,
               decoration: BoxDecoration(
-                  color: const Color(0xffF4C2C2),
+                  color: const Color.fromARGB(160, 255, 255, 255),
                   borderRadius: BorderRadius.circular(20)),
               child: Column(
                 children: [
@@ -136,6 +136,7 @@ class _LoginPageState extends State<LoginPage> {
                       child: inputFeild(
                           hinttxt: "Mail",
                           icon: CupertinoIcons.mail,
+                          color: Color.fromARGB(255, 0, 0, 0),
                           fieldcontroller: _emailController,
                           onChanged: (value) {
                             setState(() {
@@ -148,6 +149,7 @@ class _LoginPageState extends State<LoginPage> {
                       child: inputFeild(
                           hinttxt: "Password",
                           icon: CupertinoIcons.lock,
+                          color: Color.fromARGB(255, 0, 0, 0),
                           fieldcontroller: _passwordController,
                           onChanged: (value) {
                             setState(() {

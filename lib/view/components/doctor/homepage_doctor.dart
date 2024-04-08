@@ -18,7 +18,7 @@ class _DoctorHomePageState extends State<DoctorHomePage> {
       appBar: AppBar(
         title: Text('Doctors Page'),
         centerTitle: true,
-        backgroundColor: const Color.fromRGBO(247, 65, 143, 1.000),
+        backgroundColor: Color.fromARGB(255, 252, 80, 106),
         elevation: 0.0,
       ),
       drawer: Drawer(
@@ -86,7 +86,7 @@ class _DoctorHomePageState extends State<DoctorHomePage> {
         ),
       ),
       body: Container(
-        color: Color(0xffF4D4D4),
+        color: const Color.fromRGBO(254, 199, 180, 1.000),
         padding: EdgeInsets.all(16.0),
         child: Center(
           child: Column(

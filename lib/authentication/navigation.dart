@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:medrecords/view/components/doctor/homepage_doctor.dart';
 import 'package:medrecords/view/homepage.dart';
+import 'package:medrecords/authentication/welcome_page.dart';
 
 class NavigationPage extends StatelessWidget {
   static const route = '/navigation';
@@ -15,6 +16,55 @@ class NavigationPage extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Color.fromARGB(255, 252, 80, 106),
         elevation: 0.0,
+      ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: Color.fromARGB(255, 252, 80, 106),
+              ),
+              child: Container(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Icon(
+                      Icons.person,
+                      color: Colors.white,
+                      size: 80.0,
+                    ),
+                    SizedBox(
+                      height: 10.0,
+                    ),
+                    Text(
+                      'Doctor Name',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20.0,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.settings),
+              title: Text('Settings'),
+              onTap: () {
+                // Navigate to settings page
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.exit_to_app),
+              title: Text('Logout'),
+              onTap: () {
+                // Logout
+                Navigator.pushNamed(context, WelcomePage.route);
+              },
+            ),
+          ],
+        ),
       ),
       body: Container(
         color: const Color.fromRGBO(254, 199, 180, 1.000),

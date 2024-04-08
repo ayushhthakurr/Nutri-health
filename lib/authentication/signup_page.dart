@@ -121,7 +121,7 @@ class _SignupPageState extends State<SignupPage> {
             ),
             Container(
               decoration: BoxDecoration(
-                  color: const Color(0xffF4C2C2),
+                  color: const Color.fromARGB(160, 255, 255, 255),
                   borderRadius: BorderRadius.circular(20)),
               child: Column(
                 children: [
@@ -130,6 +130,7 @@ class _SignupPageState extends State<SignupPage> {
                       child: inputFeild(
                           hinttxt: "Name",
                           icon: CupertinoIcons.profile_circled,
+                          color: Color.fromARGB(255, 0, 0, 0),
                           fieldcontroller: _nameController,
                           onChanged: (value) {
                             setState(() {
@@ -145,6 +146,7 @@ class _SignupPageState extends State<SignupPage> {
                       child: inputFeild(
                           hinttxt: "Mail",
                           icon: CupertinoIcons.mail,
+                          color: Color.fromARGB(255, 0, 0, 0),
                           fieldcontroller: _emailController,
                           onChanged: (value) {
                             setState(() {
@@ -160,6 +162,7 @@ class _SignupPageState extends State<SignupPage> {
                       child: inputFeild(
                           hinttxt: "Password",
                           icon: CupertinoIcons.lock,
+                          color: Color.fromARGB(255, 0, 0, 0),
                           fieldcontroller: _passwordController,
                           onChanged: (value) {
                             setState(() {

@@ -6,7 +6,7 @@ class AppTheme {
   AppTheme._();
 
   static final ThemeData lightTheme = ThemeData(
-      primaryColor: const Color.fromARGB(255, 235, 41, 77),
+      primaryColor: Color.fromARGB(255, 252, 80, 106),
       useMaterial3: true,
       floatingActionButtonTheme: const FloatingActionButtonThemeData(
           backgroundColor: Color(0xffF4C2C2)),

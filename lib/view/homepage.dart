@@ -65,7 +65,7 @@ class Homepage extends StatelessWidget {
       onPressed: () {
         Navigator.pushNamed(context, route);
       },
-      color: Theme.of(context).primaryColor,
+      color: Color.fromARGB(255, 235, 117, 134),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(13)),
       child: Text(
         txt,
