@@ -38,12 +38,9 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   bool _isSignedIn = true;
-  // This widget is the root of your application.
 
   @override
   void initState() {
-    // ignore: todo
-    // TODO: implement initState
     super.initState();
     getUserLoggedInStatus();
   }
@@ -66,7 +63,6 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       home: _isSignedIn ? NavigationPage() : const WelcomePage(),
-      //home:  NavigationPage(),
       routes: {
         NavigationPage.route: (context) => NavigationPage(),
         DoctorHomePage.route: (context) => DoctorHomePage(),
