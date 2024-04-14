@@ -48,12 +48,12 @@ If you are interested in contributing to the Medrecord project, we welcome your 
 
 ## Screenshot 
 <span>
-<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick1.jpg" width="16%" height="45%">
-<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick2.jpg" width="16%" height="45%">
-<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick3.jpg" width="16%" height="45%">
-<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick4.jpg" width="16%" height="45%">
-<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick5.jpg" width="16%" height="45%">
-<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick6.jpg" width="16%" height="45%">
-<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick7.jpg" width="16%" height="45%">
-<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick8.jpg" width="16%" height="45%">
+<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick1.jpg" width="19%" height="45%">
+<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick2.jpg" width="19%" height="45%">
+<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick3.jpg" width="19%" height="45%">
+<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick4.jpg" width="19%" height="45%">
+<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick5.jpg" width="19%" height="45%">
+<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick6.jpg" width="19%" height="45%">
+<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick7.jpg" width="19%" height="45%">
+<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick8.jpg" width="19%" height="45%">
 </span>
