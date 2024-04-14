@@ -37,8 +37,20 @@ Once you are logged in, you can create new patient records by clicking the "New 
 
 ## Contributing 
 
+
+
 If you are interested in contributing to the Medrecord project, we welcome your suggestions and pull requests! Please follow these guidelines when submitting contributions:
 
 - Check the [issue tracker](https://github.com/your-username/medrecord/issues) to see if your idea has already been discussed.
 - If you are reporting a bug, please include as much detail as possible (e.g. steps to reproduce, error messages, etc.).
 - If you are suggesting a new feature, please include a clear and concise description of the idea, as well as any relevant use cases or examples.
+  <span>
+<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick1.jpg" width="18%" height="45%">
+<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick2.jpg" width="18%" height="45%">
+<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick3.jpg" width="18%" height="45%">
+<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick4.jpg" width="18%" height="45%">
+<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick5.jpg" width="18%" height="45%">
+<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick6.jpg" width="18%" height="45%">
+<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick7.jpg" width="18%" height="45%">
+<img src="https://github.com/garima-pachori/Nutri-health/blob/main/assets/images/Pick8.jpg" width="18%" height="45%">
+</span>
