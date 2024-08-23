@@ -1,7 +1,7 @@
 
-# Medrecord
+# NutriHealth
 
-Medrecord is a mobile application built with [Flutter](https://flutter.dev/) and [Firebase](https://firebase.google.com/) that allows healthcare providers to securely store and manage electronic medical records (EMR) for their patients.
+NutriHealth is a mobile application built with [Flutter](https://flutter.dev/) and [Firebase](https://firebase.google.com/) that allows healthcare providers to securely store and manage electronic medical records (EMR) for their patients.
 
 ## Features
 
